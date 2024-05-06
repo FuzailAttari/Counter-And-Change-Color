@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter And Change Color</title>
+</head>
+<body>
+    <center>
+
+        <style>
+            body{
+                background-color: black;
+                color: aliceblue;
+            }
+            button{
+                background-color: black;
+                color: aliceblue;
+                width: 100px;
+                height: 50px;
+                border-radius: 150px;
+                font-weight: bolder;
+                border: 2px solid orangered;
+            }
+            button:hover{
+                background-color: white;
+                color: red;
+            }
+            .h{
+                display: flex;
+                width: 20%;
+                justify-content: center;
+                border: 2px solid black;
+                margin: 20px;
+                background-color: black;
+                color: aliceblue;
+                border-radius: 150px;
+            }
+            .h h1{
+                margin: 10px;
+            }
+            @media only screen and  (max-width: 800px){
+        
+                .h{
+                    width: 60%;
+                }
+                
+            }
+            </style>
+    
+    <button onclick="color('red')"> Red</button>
+    <button onclick="color('Blue')"> Blue</button>
+    <button onclick="color ('green')"> Green</button>
+    <button onclick="color('Yellow')"> Yellow</button>
+    <button onclick="color('Aqua')"> Aqua</button>
+
+        <div class="h">
+            <h1 id="less">0</h1>
+        </div>
+        <button onclick="dec()">Decrement</button>
+        <button onclick="reset()">Reset</button>
+        <button onclick="inc()">increment</button>
+
+    
+</center>
+    <script src="app.js"></script>
+</body>
+</html>
