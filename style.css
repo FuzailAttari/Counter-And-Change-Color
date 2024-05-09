@@ -1,0 +1,38 @@
+body{
+    background-color: black;
+    color: aliceblue;
+}
+button{
+    background-color: black;
+    color: aliceblue;
+    width: 100px;
+    height: 50px;
+    border-radius: 150px;
+    font-weight: bolder;
+    border: 2px solid orangered;
+}
+button:hover{
+    background-color: white;
+    color: red;
+}
+.h{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    border: 2px solid black;
+    margin: 20px;
+    background-color: black;
+    color: aliceblue;
+    border: 2px solid white;
+    border-radius: 150px;
+}
+.h h1{
+    margin: 10px;
+}
+@media only screen and  (max-width: 800px){
+
+    .h{
+        width: 60%;
+    }
+    
+}
